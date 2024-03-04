@@ -1,0 +1,7 @@
+bloc4.tar
+Dockerfile
+docker-compose.yml
+.dockerignore
+new_start.sh
+start.sh
+README.md
