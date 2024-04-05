@@ -3,16 +3,10 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-$host = 'localhost:3310';
+$host = 'localhost:3306';
 $dbname = 'library';
-$username = 'root';//'libr';
-$password = 'mezfezfef455e1fe1f5ez'; //'NIEN97BF21OZEFJOZEO';
-// ALTER TABLE emprunt ADD COLUMN date_retour_prevue DATE;
-/*apt update & install nano
-nano lib.sql
-mysql -u root -p -e "CREATE DATABASE library";
-mysql -u root -p library < lib.sql
-rm lib.sql*/
+$username = 'libr';
+$password = 'NIEN97BF21OZEFJOZEO';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
